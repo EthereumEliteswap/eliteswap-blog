@@ -97,8 +97,8 @@
     "dev": "gatsby develop",
     "devlocal": "gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{js,jsx,md,mdx}\"",
     "deploy": "gatsby-plugin-s3 deploy"

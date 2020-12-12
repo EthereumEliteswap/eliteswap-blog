@@ -5,6 +5,7 @@ require('dotenv').config({
 })
 
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Elite Swap`,
     description: `Automated liquidity protocol on Ethereum`,
@@ -42,7 +43,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/pages/blog/`
+        path: `${__dirname}/src/pages/`
       }
     },
     {

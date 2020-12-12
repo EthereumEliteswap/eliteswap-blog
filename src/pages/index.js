@@ -134,7 +134,7 @@ export const NewPill = styled.p`
 const Blog = props => {
   const data = useStaticQuery(graphql`
     {
-      allMdx(filter: { fileAbsolutePath: { regex: "/blog/" } }, sort: { order: DESC, fields: frontmatter___date }) {
+      allMdx(filter: { fileAbsolutePath: { regex: "/" } }, sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
             id
